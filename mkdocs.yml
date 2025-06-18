@@ -1,0 +1,29 @@
+site_name: Example Interface
+site_url: https://lrmonotch.github.io/doc-example
+repo_url: https://github.com/lrmonotch/doc-example
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+    - toc.integrate
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture:
+    - PlantUML Diagrams: plantuml.md  
+  - OpenAPI Docs: openapi.md
+extra_css:
+  - stylesheets/width.css
+  - stylesheets/neoteroi-css-v1.1.2.css
+plugins:
+  - search
+  - neoteroi.mkdocsoad:
+       use_pymdownx: true
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - plantuml_markdown
