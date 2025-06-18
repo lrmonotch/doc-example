@@ -23,6 +23,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install Java (required by PlantUML)
+        run: sudo apt-get update && sudo apt-get install -y default-jre
+
+      - name: Install PlantUML
+        run: sudo apt-get install -y plantuml
+
       - name: Build site
         run: mkdocs build
 
