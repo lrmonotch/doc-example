@@ -14,11 +14,13 @@ nav:
   - Architecture:
     - PlantUML Diagrams: plantuml.md  
   - OpenAPI Docs: openapi.md
+  - Examples: examples.md
 extra_css:
   - stylesheets/width.css
   - stylesheets/neoteroi-css-v1.1.2.css
 plugins:
-  - search
+  # - search
+  - include-markdown
   - neoteroi.mkdocsoad:
        use_pymdownx: true
 markdown_extensions:
@@ -27,3 +29,5 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - plantuml_markdown
+  - admonition
+  - pymdownx.highlight

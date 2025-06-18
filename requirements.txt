@@ -3,3 +3,4 @@ mkdocs-material
 neoteroi-mkdocs
 pymdown-extensions
 plantuml-markdown
+mkdocs-include-markdown-plugin
